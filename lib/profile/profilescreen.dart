@@ -24,7 +24,8 @@ class ProfleScreen extends StatelessWidget {
       body:Center(child:Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children:  [
-            Container(
+           GetBuilder<HomeController>(builder: (_){
+             return Container(
               margin:const EdgeInsets.all(9.0),
               height: 90,
               width: double.infinity,
@@ -37,7 +38,8 @@ class ProfleScreen extends StatelessWidget {
               child:Center(child: Text(controller.X.toString(),
               style:TextStyle(fontSize: 40,color: Color.fromARGB(255, 238, 48, 1))
               ),),
-            ),
+            );
+           }),
             const Text('You Just Navigated',style:TextStyle( fontSize:24,)),
 
             ElevatedButton(onPressed: (){
