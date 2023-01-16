@@ -39,6 +39,12 @@ class ProfleScreen extends StatelessWidget {
               ),),
             ),
             const Text('You Just Navigated',style:TextStyle( fontSize:24,)),
+
+            ElevatedButton(onPressed: (){
+
+              //the following line of code is used to get off to any named route
+                controller.decreaseX();
+              }, child:const Text("decrease")),
              ElevatedButton(onPressed: (){
 
               //the following line of code is used to get off to any named route

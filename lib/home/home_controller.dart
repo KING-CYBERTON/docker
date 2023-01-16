@@ -9,4 +9,12 @@ class HomeController extends GetxController {
     print(X);
 
   }  
+
+   void decreaseX (){
+    _x--;
+    update();
+    print(X);
+
+  }  
+  
 }
